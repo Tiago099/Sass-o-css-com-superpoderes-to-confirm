@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_logo {
+  text-align: center;
+}
+
+.header_logo .header_img {
+  max-width: 350px;
+}
+
+.header_menu .menu_list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eaeaeb;
+  border-bottom: 1px solid #eaeaeb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px 0;
+}
+
+.header_menu .menu_list .menu_links {
+  position: relative;
+}
+
+.header_menu .menu_list .menu_links::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -3px;
+  margin: auto;
+  height: 15px;
+  width: 1px;
+  background-color: #eaeaeb;
+}
+
+.header_menu .menu_list .menu_links .menu_link {
+  padding: 0 25px;
+  color: #464646;
+}
+
+.header_menu .menu_list .menu_links .menu_link:hover {
+  color: #A050BE;
+}
+
+/*Este trecho de estilo se refere ao rodapé do nosso blog, estilo de comentario 2 multiplas linhas*/
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer .footer__logo {
+  max-width: 100px;
+}
+
+.footer .footer__txt {
+  margin: auto;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
