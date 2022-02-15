@@ -14,10 +14,9 @@
         @include fontSize(22px);
         color: $dark-grey;
         letter-spacing: 1px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        margin-left: 0;
-        margin-right: 0;
+        @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
+
+       
     }
 
     .breadcrumb{
@@ -35,19 +34,21 @@
 
         &__img{
             width: 10px;
-            margin: 8px;
+            @extend %default-margin-top, %default-margin-bottom, %default-margin-left, %default-margin-right;
+            
         }
     }
 
     &__img{
         width: 100%;
-        margin-bottom: 20px;
+        @extend %double-margin-bottom;
+        
     }
-
     &__intro{
         font-weight: 100;
         color: $dark-grey;
         width: 70%;
+       
         margin: 30px auto;
         text-align: center;
         @include fontSize(16px);
